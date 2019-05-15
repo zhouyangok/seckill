@@ -22,7 +22,7 @@ import javax.validation.Valid;
  * @ClassName LoginController
  * @Description: TODO
  * @Author zhouyang
- * @Date 2019/3/15 上午10:26.
+ * @Date 2019/3/15 上午0:26.
  */
 @Controller
 @RequestMapping("/user")
