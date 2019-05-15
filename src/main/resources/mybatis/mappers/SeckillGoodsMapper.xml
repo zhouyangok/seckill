@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cn.hfbin.seckill.dao.SeckillGoodsMapper" >
-  <resultMap id="BaseResultMap" type="cn.hfbin.seckill.entity.SeckillGoods" >
+<mapper namespace="cn.crazyang.seckill.dao.SeckillGoodsMapper" >
+  <resultMap id="BaseResultMap" type="cn.crazyang.seckill.entity.SeckillGoods" >
     <constructor >
       <idArg column="id" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="goods_id" jdbcType="BIGINT" javaType="java.lang.Long" />
@@ -24,7 +24,7 @@
     delete from seckill_goods
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="cn.hfbin.seckill.entity.SeckillGoods" >
+  <insert id="insert" parameterType="cn.crazyang.seckill.entity.SeckillGoods" >
     insert into seckill_goods (id, goods_id, seckil_price, 
       stock_count, start_date, end_date
       )
@@ -32,7 +32,7 @@
       #{stockCount,jdbcType=INTEGER}, #{startDate,jdbcType=TIMESTAMP}, #{endDate,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="cn.hfbin.seckill.entity.SeckillGoods" >
+  <insert id="insertSelective" parameterType="cn.crazyang.seckill.entity.SeckillGoods" >
     insert into seckill_goods
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -75,7 +75,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="cn.hfbin.seckill.entity.SeckillGoods" >
+  <update id="updateByPrimaryKeySelective" parameterType="cn.crazyang.seckill.entity.SeckillGoods" >
     update seckill_goods
     <set >
       <if test="goodsId != null" >
@@ -96,7 +96,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="cn.hfbin.seckill.entity.SeckillGoods" >
+  <update id="updateByPrimaryKey" parameterType="cn.crazyang.seckill.entity.SeckillGoods" >
     update seckill_goods
     set goods_id = #{goodsId,jdbcType=BIGINT},
       seckil_price = #{seckilPrice,jdbcType=DECIMAL},

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cn.hfbin.seckill.dao.GoodsMapper" >
-  <resultMap id="BaseResultMap" type="cn.hfbin.seckill.entity.Goods" >
+<mapper namespace="cn.crazyang.seckill.dao.GoodsMapper" >
+  <resultMap id="BaseResultMap" type="cn.crazyang.seckill.entity.Goods" >
     <constructor >
       <idArg column="id" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="goods_name" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -13,7 +13,7 @@
       <arg column="update_date" jdbcType="TIMESTAMP" javaType="java.util.Date" />
     </constructor>
   </resultMap>
-  <resultMap id="ResultMapWithBLOBs" type="cn.hfbin.seckill.entity.Goods" >
+  <resultMap id="ResultMapWithBLOBs" type="cn.crazyang.seckill.entity.Goods" >
     <constructor >
       <idArg column="id" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="goods_name" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -26,7 +26,7 @@
       <arg column="goods_detail" jdbcType="LONGVARCHAR" javaType="java.lang.String" />
     </constructor>
   </resultMap>
-  <resultMap id="BaseResultSeckillOrderAndGoodsMap" type="cn.hfbin.seckill.bo.GoodsBo" >
+  <resultMap id="BaseResultSeckillOrderAndGoodsMap" type="cn.crazyang.seckill.bo.GoodsBo" >
     <constructor >
       <arg column="seckil_price" jdbcType="DECIMAL" javaType="java.math.BigDecimal" />
       <arg column="stock_count" jdbcType="INTEGER" javaType="java.lang.Integer" />
@@ -65,7 +65,7 @@
     delete from goods
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="cn.hfbin.seckill.entity.Goods" >
+  <insert id="insert" parameterType="cn.crazyang.seckill.entity.Goods" >
     insert into goods (id, goods_name, goods_title, 
       goods_img, goods_price, goods_stock, 
       create_date, update_date, goods_detail
@@ -75,7 +75,7 @@
       #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP}, #{goodsDetail,jdbcType=LONGVARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="cn.hfbin.seckill.entity.Goods" >
+  <insert id="insertSelective" parameterType="cn.crazyang.seckill.entity.Goods" >
     insert into goods
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -136,7 +136,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="cn.hfbin.seckill.entity.Goods" >
+  <update id="updateByPrimaryKeySelective" parameterType="cn.crazyang.seckill.entity.Goods" >
     update goods
     <set >
       <if test="goodsName != null" >
@@ -166,7 +166,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="cn.hfbin.seckill.entity.Goods" >
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="cn.crazyang.seckill.entity.Goods" >
     update goods
     set goods_name = #{goodsName,jdbcType=VARCHAR},
       goods_title = #{goodsTitle,jdbcType=VARCHAR},
@@ -178,7 +178,7 @@
       goods_detail = #{goodsDetail,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="cn.hfbin.seckill.entity.Goods" >
+  <update id="updateByPrimaryKey" parameterType="cn.crazyang.seckill.entity.Goods" >
     update goods
     set goods_name = #{goodsName,jdbcType=VARCHAR},
       goods_title = #{goodsTitle,jdbcType=VARCHAR},
