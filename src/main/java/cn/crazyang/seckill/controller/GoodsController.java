@@ -11,6 +11,7 @@ import cn.crazyang.seckill.result.Result;
 import cn.crazyang.seckill.service.SeckillGoodsService;
 import cn.crazyang.seckill.util.CookieUtil;
 import cn.crazyang.seckill.vo.GoodsDetailVo;
+import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -49,6 +50,8 @@ public class GoodsController {
     @Autowired
     ApplicationContext applicationContext;
 
+
+    @ApiOperation(value = "查看商品详情", response = List.class)
     @RequestMapping("/list")
     @ResponseBody
     public String list(Model model, HttpServletRequest request, HttpServletResponse response) {

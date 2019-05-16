@@ -32,6 +32,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         super.addInterceptors(registry);
     }
 
+
     @Bean("myFilter")
     public Filter uploadFilter() {
         return new SessionExpireFilter();

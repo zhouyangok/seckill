@@ -170,6 +170,7 @@ public class SeckillController implements InitializingBean {
         long result = seckillOrderService.getSeckillResult((long) user.getId(), goodsId);
         return Result.success(result);
     }
+
     @AccessLimit(seconds=5, maxCount=5, needLogin=true)
     @RequestMapping(value = "/path", method = RequestMethod.GET)
     @ResponseBody
