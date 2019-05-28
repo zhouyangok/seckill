@@ -9,7 +9,8 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class MQSender {
+public class
+MQSender {
 
 	private static Logger log = LoggerFactory.getLogger(MQSender.class);
 	

@@ -75,6 +75,7 @@ public class GoodsController {
         }
         return html;
     }
+
     @RequestMapping("/to_detail2/{goodsId}")
     @ResponseBody
     public String detail2(Model model,

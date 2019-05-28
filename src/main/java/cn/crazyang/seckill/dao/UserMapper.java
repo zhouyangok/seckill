@@ -2,12 +2,13 @@ package cn.crazyang.seckill.dao;
 
 import cn.crazyang.seckill.entity.User;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * My Blog : www.crazyang.cn
  * github: https://github.com/hfbin
- * Created by: HuangFuBin
- * Date: 2018/7/10
+ * Created by: crazyang
+ * Date: 2019/5/10
  * Time: 11:29
  * Such description:
  */
