@@ -2,12 +2,12 @@ package cn.crazyang.seckill.interceptor;
 
 import cn.crazyang.seckill.annotations.AccessLimit;
 import cn.crazyang.seckill.entity.User;
-import cn.crazyang.seckill.redis.AccessKey;
-import cn.crazyang.seckill.redis.RedisService;
-import cn.crazyang.seckill.redis.UserKey;
-import cn.crazyang.seckill.result.CodeMsg;
-import cn.crazyang.seckill.result.Result;
-import cn.crazyang.seckill.util.CookieUtil;
+import cn.crazyang.seckill.basepag.redis.AccessKey;
+import cn.crazyang.seckill.basepag.redis.RedisService;
+import cn.crazyang.seckill.basepag.redis.UserKey;
+import cn.crazyang.seckill.basepag.result.CodeMsg;
+import cn.crazyang.seckill.basepag.result.Result;
+import cn.crazyang.seckill.basepag.util.CookieUtil;
 import com.alibaba.fastjson.JSON;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

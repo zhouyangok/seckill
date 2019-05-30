@@ -18,6 +18,7 @@ import java.util.List;
 public class SeckillGoodsServiceImpl implements SeckillGoodsService {
     @Autowired
     GoodsMapper goodsMapper;
+
     @Override
     public List<GoodsBo> getSeckillGoodsList() {
         return goodsMapper.selectAllGoodes();

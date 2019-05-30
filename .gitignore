@@ -3,6 +3,8 @@
 *.cmd
 mvnw
 
+application.properties
+
 ### STS ###
 .apt_generated
 .classpath

@@ -1,13 +1,13 @@
 package cn.crazyang.seckill.controller;
 
-import cn.crazyang.seckill.common.Const;
+import cn.crazyang.seckill.basepag.common.Const;
 import cn.crazyang.seckill.entity.User;
 import cn.crazyang.seckill.param.LoginParam;
-import cn.crazyang.seckill.redis.RedisService;
-import cn.crazyang.seckill.redis.UserKey;
-import cn.crazyang.seckill.result.Result;
+import cn.crazyang.seckill.basepag.redis.RedisService;
+import cn.crazyang.seckill.basepag.redis.UserKey;
+import cn.crazyang.seckill.basepag.result.Result;
 import cn.crazyang.seckill.service.UserService;
-import cn.crazyang.seckill.util.CookieUtil;
+import cn.crazyang.seckill.basepag.util.CookieUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

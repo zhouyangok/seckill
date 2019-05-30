@@ -1,6 +1,6 @@
 package cn.crazyang.seckill.param;
 
-import cn.crazyang.seckill.validator.IsMobile;
+import cn.crazyang.seckill.basepag.validator.IsMobile;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

@@ -1,17 +1,17 @@
 package cn.crazyang.seckill.service.ipml;
 
 import cn.crazyang.seckill.bo.GoodsBo;
-import cn.crazyang.seckill.common.Const;
+import cn.crazyang.seckill.basepag.common.Const;
 import cn.crazyang.seckill.dao.SeckillOrderMapper;
 import cn.crazyang.seckill.entity.OrderInfo;
 import cn.crazyang.seckill.entity.SeckillOrder;
 import cn.crazyang.seckill.entity.User;
-import cn.crazyang.seckill.redis.RedisService;
-import cn.crazyang.seckill.redis.SeckillKey;
+import cn.crazyang.seckill.basepag.redis.RedisService;
+import cn.crazyang.seckill.basepag.redis.SeckillKey;
 import cn.crazyang.seckill.service.OrderService;
 import cn.crazyang.seckill.service.SeckillGoodsService;
 import cn.crazyang.seckill.service.SeckillOrderService;
-import cn.crazyang.seckill.util.MD5Util;
+import cn.crazyang.seckill.basepag.util.MD5Util;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

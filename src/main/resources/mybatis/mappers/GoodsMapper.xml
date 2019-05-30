@@ -200,6 +200,7 @@
     from goods
     left join seckill_goods sg on sg.goods_id = goods.id
   </select>
+
   <select id="getseckillGoodsBoByGoodsId" resultMap="BaseResultSeckillOrderAndGoodsMap">
     select
     <include refid="Base_Column_Seckill_List"/>

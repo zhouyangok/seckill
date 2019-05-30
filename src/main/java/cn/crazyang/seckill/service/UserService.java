@@ -2,7 +2,7 @@ package cn.crazyang.seckill.service;
 
 import cn.crazyang.seckill.entity.User;
 import cn.crazyang.seckill.param.LoginParam;
-import cn.crazyang.seckill.result.Result;
+import cn.crazyang.seckill.basepag.result.Result;
 
 /**
  * @ClassName UserService
